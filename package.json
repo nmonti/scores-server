@@ -1,0 +1,39 @@
+{
+  "name": "scores-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "babel -d dist/ src/ && node dist/index.js",
+    "build": "webpack --mode development",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "graphql": "^14.1.1",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.0",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^24.1.0",
+    "regenerator-runtime": "^0.13.1",
+    "webpack": "^4.29",
+    "webpack-cli": "^3.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmonti/scores-server.git"
+  },
+  "author": "nmonti"
+}
