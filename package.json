@@ -1,12 +1,19 @@
 {
   "name": "scores-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.3.0"
+  },
   "scripts": {
     "start": "babel -d dist/ src/ && node dist/index.js",
     "build": "webpack --mode development",
     "test": "jest"
   },
   "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^6.26.0",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "dotenv": "^4.0.0",
@@ -17,10 +24,6 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
